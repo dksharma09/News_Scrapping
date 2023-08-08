@@ -15,7 +15,3 @@ github
 8) git remote set-url origin https:// token@repository_link
 9) git push -u origin main
 
-# https://github.com/dksharma09/newsContentScrap.git
-# git config --global user.name 'dksharma09'
-# git config --global user.email 'sharma.dushyantkumar1999@gmail.com'
-# git remote add https://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@github.com/dksharma09/newsContentScrap.git
