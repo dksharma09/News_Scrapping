@@ -1,6 +1,7 @@
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): edition.cnn.com:443
-DEBUG:urllib3.connectionpool:https://edition.cnn.com:443 "GET /travel/article/scenic-airport-landings-2020/index.html HTTP/1.1" 200 742273
+DEBUG:urllib3.connectionpool:https://edition.cnn.com:443 "GET /travel/article/scenic-airport-landings-2020/index.html HTTP/1.1" 200 742272
 INFO:root:Title : World’s 10 most scenic airport landings for 2020
+INFO:root:Article Writer Name : Maureen O'Hare
 INFO:root:Read the NEWS below : 
 INFO:root:They say absence makes the heart grow fonder.
 INFO:root:The world’s most scenic airport airport approaches, as ranked annually by booking platform PrivateFly, are this year looking more glorious than ever.

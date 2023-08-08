@@ -1,0 +1,5 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): edition.cnn.com:443
+DEBUG:urllib3.connectionpool:https://edition.cnn.com:443 "GET /travel/article/scenic-airport-landings-2020/index.html HTTP/1.1" 200 742272
+INFO:root:Title : World’s 10 most scenic airport landings for 2020
+INFO:root:Written By : Maureen O'Hare
+ERROR:root:Error occurred : ResultSet object has no attribute 'text'. You're probably treating a list of elements like a single element. Did you call find_all() when you meant to call find()?
