@@ -33,59 +33,5 @@
         "description": "time",
         "detail": "time",
         "documentation": {}
-    },
-    {
-        "label": "fileName",
-        "kind": 5,
-        "importPath": "scrp",
-        "description": "scrp",
-        "peekOfCode": "fileName = str(time.time())\nlogging.basicConfig(filename=f'logs/{fileName}.log', encoding='utf-8', level=logging.DEBUG)\nwebData = requests.get(\"https://edition.cnn.com/travel/article/scenic-airport-landings-2020/index.html\").text\nbeautify = bs(webData, 'html.parser')\nfindHeading = beautify.find('div', {'class' : 'headline__wrapper'})\nheading = (findHeading.text).strip()\nlogging.info(f'Title : {heading}')\nfindContent = beautify.find_all('p', {'class' : 'paragraph inline-placeholder'})\nprint(len(findContent))\n# findHeader2 = beautify.find_all('h2', {'class' : 'subheader'})",
-        "detail": "scrp",
-        "documentation": {}
-    },
-    {
-        "label": "webData",
-        "kind": 5,
-        "importPath": "scrp",
-        "description": "scrp",
-        "peekOfCode": "webData = requests.get(\"https://edition.cnn.com/travel/article/scenic-airport-landings-2020/index.html\").text\nbeautify = bs(webData, 'html.parser')\nfindHeading = beautify.find('div', {'class' : 'headline__wrapper'})\nheading = (findHeading.text).strip()\nlogging.info(f'Title : {heading}')\nfindContent = beautify.find_all('p', {'class' : 'paragraph inline-placeholder'})\nprint(len(findContent))\n# findHeader2 = beautify.find_all('h2', {'class' : 'subheader'})\n# print(len(findHeader2))\n# print(findHeader2[0].text)",
-        "detail": "scrp",
-        "documentation": {}
-    },
-    {
-        "label": "beautify",
-        "kind": 5,
-        "importPath": "scrp",
-        "description": "scrp",
-        "peekOfCode": "beautify = bs(webData, 'html.parser')\nfindHeading = beautify.find('div', {'class' : 'headline__wrapper'})\nheading = (findHeading.text).strip()\nlogging.info(f'Title : {heading}')\nfindContent = beautify.find_all('p', {'class' : 'paragraph inline-placeholder'})\nprint(len(findContent))\n# findHeader2 = beautify.find_all('h2', {'class' : 'subheader'})\n# print(len(findHeader2))\n# print(findHeader2[0].text)\nlogging.info('Read the NEWS below : ')",
-        "detail": "scrp",
-        "documentation": {}
-    },
-    {
-        "label": "findHeading",
-        "kind": 5,
-        "importPath": "scrp",
-        "description": "scrp",
-        "peekOfCode": "findHeading = beautify.find('div', {'class' : 'headline__wrapper'})\nheading = (findHeading.text).strip()\nlogging.info(f'Title : {heading}')\nfindContent = beautify.find_all('p', {'class' : 'paragraph inline-placeholder'})\nprint(len(findContent))\n# findHeader2 = beautify.find_all('h2', {'class' : 'subheader'})\n# print(len(findHeader2))\n# print(findHeader2[0].text)\nlogging.info('Read the NEWS below : ')\nfor i in range(len(findContent)) :",
-        "detail": "scrp",
-        "documentation": {}
-    },
-    {
-        "label": "heading",
-        "kind": 5,
-        "importPath": "scrp",
-        "description": "scrp",
-        "peekOfCode": "heading = (findHeading.text).strip()\nlogging.info(f'Title : {heading}')\nfindContent = beautify.find_all('p', {'class' : 'paragraph inline-placeholder'})\nprint(len(findContent))\n# findHeader2 = beautify.find_all('h2', {'class' : 'subheader'})\n# print(len(findHeader2))\n# print(findHeader2[0].text)\nlogging.info('Read the NEWS below : ')\nfor i in range(len(findContent)) :\n    para = (findContent[i].text).strip()",
-        "detail": "scrp",
-        "documentation": {}
-    },
-    {
-        "label": "findContent",
-        "kind": 5,
-        "importPath": "scrp",
-        "description": "scrp",
-        "peekOfCode": "findContent = beautify.find_all('p', {'class' : 'paragraph inline-placeholder'})\nprint(len(findContent))\n# findHeader2 = beautify.find_all('h2', {'class' : 'subheader'})\n# print(len(findHeader2))\n# print(findHeader2[0].text)\nlogging.info('Read the NEWS below : ')\nfor i in range(len(findContent)) :\n    para = (findContent[i].text).strip()\n    logging.info(f'{para}')\n# heading = findHeading.text",
-        "detail": "scrp",
-        "documentation": {}
     }
 ]
